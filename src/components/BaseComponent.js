@@ -37,7 +37,7 @@ const ResultComponent = styled.div`
 `;
 
 const apiCall = (word) => {
-  return fetch("http://localhost:8081/search", {
+  return fetch("https://metioserver.herokuapp.com/search", {
     method: "GET",
     headers: { word: word },
   })
